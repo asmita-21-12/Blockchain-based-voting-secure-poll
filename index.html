@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Poll Voting</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Secure Poll Voting</h1>
+    <form id="votingForm">
+      <label for="voterId">Voter ID:</label>
+      <input type="text" id="voterId" name="voterId" required minlength="10" maxlength="10">
+      <label for="party">Select Party:</label>
+      <select id="party" name="party" required>
+        <option value="BJP">BJP</option>
+        <option value="Congress">Congress</option>
+      </select>
+      <button type="submit">Vote</button>
+      <p id="message"></p>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
