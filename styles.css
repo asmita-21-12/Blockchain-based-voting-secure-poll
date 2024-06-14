@@ -1,0 +1,65 @@
+body {
+    background-color: #FFFAE5; /* Pastel yellow background */
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFAD5; /* Lighter pastel yellow container */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-in-out; /* Animation for container */
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-50%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333; /* Dark text color */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    color: #666; /* Medium gray text color */
+  }
+  
+  input, select, button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #FFC800; /* Yellow button */
+    color: #fff; /* White text color */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #FFD33E; /* Lighter yellow on hover */
+  }
+  
+  #message {
+    margin-top: 10px;
+    text-align: center;
+    color: #008000; /* Green text color */
+  }
